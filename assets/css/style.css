@@ -29,4 +29,5 @@ input {
     height: 75%;
     display: block;
     margin: auto;
+    opacity: 0.5;
 }
