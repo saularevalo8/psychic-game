@@ -1,0 +1,32 @@
+input {
+    text-align: center;
+}
+
+.user-area * {
+    text-align: center;
+}
+
+#validation-alert {
+    font-size: 10px;
+    color: red;
+}
+
+#letter-guessed {
+    width: 80px;
+    margin: auto;
+}
+
+#btn-reset {
+    display: none;
+}
+
+.image-bkg {
+    background-color: black;
+}
+
+.image-ball {
+    width: 75%;
+    height: 75%;
+    display: block;
+    margin: auto;
+}

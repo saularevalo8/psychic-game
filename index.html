@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Guess That Car!: A hangman game</title>
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/darkly/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Overall Bootstrap Grid -->
+    <div class="container">
+        <!-- Jumbotron with Title -->
+        <div class="jumbotron">
+            <h1 class="text-center"><strong>Guess That Letter!</strong></h1>
+            <h4 class="text-center">A Psychic game</h4>
+            <hr>
+            <div class="text-center">
+                <audio controls autoplay>
+                    <source src="assets/media/SneakySnitch.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 ">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Your guesses so far are: </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="text-center">
+                            <h1 id="lettersGuessed"></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <img src="assets/Images/CrystalBall.png" alt="" class="image-responsive image-ball">
+                </div>
+            </div>
+            <!-- Left Panel -->
+            <div class="col-lg-6">
+                <!--Press Start to begin game-->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Get Ready to get Psyched!</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="text-center">
+                            <h3>Guess the letter the Psychic has picked. Any letter from A - Z</h3>
+                            <br>
+                            <h2>Are you ready?</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls (Superpowers - Maniacal Laugh) -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Game Status</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="text-center">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <p id="totalWins">Wins: </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p id="totalLosses">Losses: </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p id="RemGuesses">Guesses Left: </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">Copyright &copy; 2016 Saul Arevalo</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
