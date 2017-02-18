@@ -14,17 +14,17 @@ var updateLetterGuess = function() {
     this.letterGuess = this.psychChoices[Math.floor(Math.random() * this.psychChoices.length)];
 };
 
-//updates remaining guess
+//updates remaining guesses
 var updateRemGuesses = function() {
-    // Here we are grabbing the HTML element and setting it equal to the guessesLeft. (i.e. guessesLeft will get displayed in HTML)
+
     document.querySelector('#RemGuesses').innerHTML = "Guesses left: " + RemGuesses;
 };
 var updateGuessesSoFar = function() {
-    // Here we take the guesses the user has tried -- then display it as letters separated by commas. 
+    //the user has tried -- then display it as letters separated by commas. 
     document.querySelector('#lettersGuessed').innerHTML = "Your Guesses so far: " + lettersGuessed.join(', ');
 };
 
-// Function will be called when we reset everything
+// resets everything
 var reset = function() {
     totalGuesses = 9;
     RemGuesses = 9;
@@ -39,7 +39,7 @@ updateLetterGuess();
 updateRemGuesses();
 
 
-//When key is released it becomes the users guess
+//When key is released it becomes the users guess letter
 document.onkeyup = function(event) {
     RemGuesses--;
     var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
@@ -56,11 +56,25 @@ document.onkeyup = function(event) {
             reset();
         }
     } else if (RemGuesses == 0) {
-        // Then we will loss and we'll update the html to display the loss 
+
         totalLosses++;
         document.querySelector('#totalLosses').innerHTML = "Losses: " + totalLosses;
         alert("Sorry, you are not psychic, maybe next time");
-        // Then we'll call the reset. 
+
         reset();
     }
-};
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+;
